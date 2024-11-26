@@ -4,11 +4,14 @@ import './App.css';
 
 
 function App() {
+
+  const navigate=useNavigate();
+
   return (
     <div className="App">
       <header className="App-header">
     <h1>Welcome to Thiwanka Vlog</h1>
-    <button className='Users-button'>Users</button>
+    <button className='Users-button' onClick={()=> navigate('/users')}>Users</button>
       </header>
     </div>
   );
